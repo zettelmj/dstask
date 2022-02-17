@@ -1,8 +1,11 @@
 package dstask
 
 import (
+  "fmt"
 	"os"
 	"path"
+
+  "github.com/adrg/xdg"
 )
 
 // Config models the dstask application's required configuration. All paths
@@ -20,11 +23,12 @@ type Config struct {
 
 // NewConfig generates a new Config struct from the environment.
 func NewConfig() Config {
+  homeDir := xdg.DataHome
 
 	var conf Config
 
 	conf.CtxFromEnvVar = getEnv("DSTASK_CONTEXT", "")
-	conf.Repo = getEnv("DSTASK_GIT_REPO", os.ExpandEnv("$HOME/.dstask"))
+  conf.Repo = getEnv("DSTASK_GIT_REPO", os.ExpandEnv(fmt.Sprintf("%s/dstask", homeDir)))
 	conf.StateFile = path.Join(conf.Repo, ".git", "dstask", "state.bin")
 	conf.IDsFile = path.Join(conf.Repo, ".git", "dstask", "ids.bin")
 

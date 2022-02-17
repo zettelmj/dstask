@@ -1,6 +1,8 @@
 # github.com/BurntSushi/toml v0.3.1
 ## explicit
 github.com/BurntSushi/toml
+# github.com/adrg/xdg v0.4.0
+## explicit
 # github.com/davecgh/go-spew v1.1.1
 github.com/davecgh/go-spew/spew
 # github.com/gofrs/uuid v3.3.0+incompatible
@@ -37,7 +39,7 @@ github.com/shurcooL/graphql/internal/jsonutil
 # github.com/sirupsen/logrus v1.7.0
 ## explicit
 github.com/sirupsen/logrus
-# github.com/stretchr/testify v1.6.1
+# github.com/stretchr/testify v1.7.0
 ## explicit
 github.com/stretchr/testify/assert
 # golang.org/x/net v0.0.0-20201021035429-f5854403a974
@@ -48,7 +50,7 @@ golang.org/x/net/context/ctxhttp
 ## explicit
 golang.org/x/oauth2
 golang.org/x/oauth2/internal
-# golang.org/x/sys v0.0.0-20210119212857-b64e53b001e4
+# golang.org/x/sys v0.0.0-20211025201205-69cdffdb9359
 ## explicit
 golang.org/x/sys/internal/unsafeheader
 golang.org/x/sys/unix
